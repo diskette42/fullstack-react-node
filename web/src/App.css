@@ -1,0 +1,182 @@
+/* import 'bootstrap/dist/css/bootstrap.min.css'; */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.row{
+  --bs-gutter-x:0 !important;
+}
+.row>*{
+  padding:0px !important;
+}
+.header{
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+.block-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0px;
+  
+}
+.block-container-row{
+  width: 50%;
+}
+@media only screen and (max-width:444px) {
+  .block-container-row{
+    width: 100%;
+  }
+  
+}
+.main-pic{
+  opacity: 1;
+  background-size: cover;
+  display:block;
+  height:100%;
+  width: 100%;
+  border-radius: 20px;
+  padding:10px;
+
+}
+.sub-pic-container{
+  padding:10px;
+  width: 100%;
+}
+.sub-pic{
+  border-radius: 15px;
+  padding:0px 3px;
+}
+.title{
+  padding: 0px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+.tags,.description,.full-description{
+  color:gray;
+  font-size: 1vw;
+}
+.tags{
+  width:100%;
+  
+}
+.tags-row{
+  width:100%;
+  white-space: pre;
+}
+.tag-word{
+  cursor:pointer;
+}
+
+.description,.full-description{
+  max-width: 25vw;
+  text-align: center;
+  width: 100%;
+
+}
+.description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.read-more{
+  cursor:pointer;
+}
+.search-input,.search-input:focus{
+  border: 0px solid;
+  border-bottom: 2px solid blue;
+  outline: none;
+  width: 50%;
+  text-align:center;
+}
+

@@ -1,0 +1,60 @@
+// var [searchedData, setSearchedData] = useState([]);
+  // const [data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   getTrip();
+  // }, []);
+  // const getTrip = async () => {
+  //   axios.get("http://localhost:9000/trips").then((res) => {
+  //     if (res.status === 200) {
+  //       setData(res.data);
+  //     }
+  //   });
+  // };
+
+  // const onChangeSearchInput = (e) => {
+  //   var searchData = [];
+
+  //   const text = e.target.value;
+  //   var filterTitle = data.filter((item) => item.description.includes(text));
+  //   let filterTag;
+  //   data.map((items, index, array) => {
+  //     filterTag = items.tags.filter((item) => item.includes(text));
+  //     if (filterTag.length > 0) {
+  //       searchData.push(data[index]);
+  //     }
+  //     return false;
+  //   });
+
+  //   var filterDescription = data.filter((item) =>
+  //     item.description.includes(text)
+  //   );
+  //   // console.log(filterTag.map((data) => data.eid));
+  //   // console.log({ filterTitle, filterTag, filterDescription });
+  //   if (filterTitle.length > 0) {
+  //     searchData.push(...filterTitle);
+  //   }
+  //   // if (filterTag.length > 0) {
+  //   //   searchData.push(...filterTag);
+  //   // }
+  //   if (filterDescription.length > 0) {
+  //     searchData.push(...filterDescription);
+  //   }
+
+  //   searchData = searchData.filter(
+  //     (element, index, array) =>
+  //       array.findIndex((t) => t.eid === element.eid) === index
+  //   );
+  //   console.log(searchData);
+
+  //   setSearchedData(searchData);
+  // };
+
+  // const mapTags =()=>{
+
+  // }
+
+  // for(let i=0;i<datas.tags.length)
+  // datas.tags[i]
+  // const background =
+  //   "https://img.wongnai.com/p/1600x0/2020/02/18/458b9a31b62b408d91137fbe152f7450.jpg";
