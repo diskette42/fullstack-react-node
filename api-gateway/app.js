@@ -3,45 +3,35 @@ const express = require("express");
 const app = express();
 var cors = require("cors");
 app.use(cors());
+app.use(express.json())
 const port = 3002;
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
 
 app.get("/trips", (req, res) => {
-  const { keyword } = req.query;
-  let searchData = [];
-  var filterTitle = data.filter((item) => item.title.includes(keyword));
-  let filterTag;
-  data.map((items, index, array) => {
-    filterTag = items.tags.filter((item) => item.includes(keyword));
-    if (filterTag.length > 0) {
-      searchData.push(data[index]);
+  const {keyword} = req.query;
+  if(!keyword) {
+     return res.json(data) 
+  }
+  let result = []
+  for (let i =0 ; i< data.length;i++){
+    const findbyTitle = data[i].title.includes(keyword);
+    const findByDescription  = data[i].description.includes(keyword)
+    if(findbyTitle || findByDescription){
+      console.log(findbyTitle,findByDescription)
+      result.push(data[i])
+    }else{
+      for(let j=0; j<data[i].tags.length;j++){
+        if(data[i].tags[j].includes(keyword)){
+          result.push(data[i])
+        }
+      }
+      }
     }
-    return false;
-  });
+  res.json(result)
 
-  var filterDescription = data.filter((item) =>
-    item.description.includes(keyword)
-  );
-
-  if (filterTitle.length > 0) {
-    searchData.push(...filterTitle);
-  }
-
-  if (filterDescription.length > 0) {
-    searchData.push(...filterDescription);
-  }
-
-  searchData = searchData.filter(
-    (element, index, array) =>
-      array.findIndex((t) => t.eid === element.eid) === index
-  );
-  console.log(searchData);
-  return res.json({
-    status: { code: 200, message: "ok" },
-    data: searchData,
-  });
 });
 
 const data = [

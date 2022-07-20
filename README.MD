@@ -1,3 +1,23 @@
+# กลับมาทำใหม่ 20/07/2022
+Refactor code ใหม่ทั้งหมด ทั้ง front-end(/new-web) และ backend (/api-gateway)
+
+===============================
+New Code is in branch 'main'
+Old Code is in branch 'old'
+===============================
+
+ปรับอะไรบ้าง:
+Frontend
+1.Bootstrap => Tailwind & Material ui
+2.ปรับให้ compatible ทั้ง pc และ mobile (responsive)
+3.จัดเรียง React folder structure ให้ดีขึ้น
+4.Refactor code: feature การ fetch api และ setKeyword ให้ดูดีขี้น
+5.รับ router จาก router query ex./?keyword=ภูเขา
+
+Backend
+1.ปรับลดการใช้ built-in function ที่ Code ตัวเก่าที่ค่อนข้างจะยุ่งยากในการอ่าน
+
+
 # Frontend Assignment
 
 แบบทดสอบสำหรับ ผู้สมัครตำแหน่ง Software Engineer, Frontend การทำแบบทดสอบผู้สมัครจะต้องคำนึงถึง กฎสามข้อที่กล่าวไว้ด้านล่างเสมอ เพราะเราเชื่อว่าการพัฒนา Software ที่ดีนั้นไม่เพียงแค่ทำให้ Software ทำงานได้ตาม requirement อย่างเดียว แต่จะต้องคำนึงถึง user และการ maintainance ต่อไปในอนาคตด้วย
