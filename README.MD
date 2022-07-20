@@ -42,7 +42,7 @@ Front-end = Vercel (https://github.com/diskette42/wongnai-trips-react)
 https://wongnai-trips-react.vercel.app/
 
 
-Back-end = Heroku
+Back-end = Heroku (https://trips-node.herokuapp.com/api/trips) || (https://trips-node.herokuapp.com/api/trips?keyword=ภูเขา)
 
 
 # Frontend Assignment
