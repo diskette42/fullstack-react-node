@@ -9,8 +9,8 @@ Refactor code ใหม่ทั้งหมด ทั้ง front-end(/new-web)
 โค้ดเก่า ปี 2021 ดูได้ที่ folder /web https://github.com/diskette42/fullstack-react-node/tree/main/web & https://github.com/diskette42/fullstack-react-node/tree/old/api-gateway
 
 
-New Code is in branch 'main'
-Old Code is in branch 'old' or in /web (did since 2021) 
+New Code is in branch 'main',
+Old Code is in branch 'old' 
 ===============================
 
 ## ปรับอะไรบ้าง:
