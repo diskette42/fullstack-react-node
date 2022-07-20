@@ -1,11 +1,19 @@
 # กลับมาทำใหม่ 20/07/2022
 Refactor code ใหม่ทั้งหมด ทั้ง front-end(/new-web) และ backend (/api-gateway)
 
+## new code
+โค้ดใหม่ ปี 2022 ดูได้ที่ folder /new-web หรือ https://github.com/diskette42/wongnai-trips-react & https://github.com/diskette42/fullstack-react-node/tree/main/api-gateway
+
+
+## old code
+โค้ดเก่า ปี 2021 ดูได้ที่ folder /web https://github.com/diskette42/fullstack-react-node/tree/main/web & https://github.com/diskette42/fullstack-react-node/tree/old/api-gateway
+
+
 New Code is in branch 'main'
 Old Code is in branch 'old' or in /web (did since 2021) 
 ===============================
 
-ปรับอะไรบ้าง:
+## ปรับอะไรบ้าง:
 
 Frontend
 
@@ -24,6 +32,17 @@ Frontend
 Backend
 
 1.ปรับลดการใช้ built-in function ที่ Code ตัวเก่าที่ค่อนข้างจะยุ่งยากในการอ่าน
+
+2.ปรับ Model Backend เป็นแบบ MVC
+
+## Deployment:
+
+Front-end = Vercel (https://github.com/diskette42/wongnai-trips-react) 
+
+https://wongnai-trips-react.vercel.app/
+
+
+Back-end = Heroku
 
 
 # Frontend Assignment
