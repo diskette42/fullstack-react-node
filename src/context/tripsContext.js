@@ -24,16 +24,15 @@ export const TripsContextProvider = ({ children }) => {
     }
     return navigate(`/?keyword=${keyword}`)
   }, [keyword, navigate])
-
+  // const api = 'http://localhost:9000/api'
+  const api = 'https://trips-node.herokuapp.com/api'
   const getTrip = useCallback(async () => {
     try {
       if (!keyword) {
-        const res = await axios.get('http://localhost:9000/api/trips')
+        const res = await axios.get(`${api}/trips`)
         return setTrips(res.data)
       }
-      const res = await axios.get(
-        `http://localhost:9000/api/trips?keyword=${keyword}`,
-      )
+      const res = await axios.get(`${api}/trips?keyword=${keyword}`)
       return setTrips(res.data)
     } catch (e) {
       console.log(e)
