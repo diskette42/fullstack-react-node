@@ -1,20 +1,28 @@
 # กลับมาทำใหม่ 20/07/2022
 Refactor code ใหม่ทั้งหมด ทั้ง front-end(/new-web) และ backend (/api-gateway)
 
-===============================
 New Code is in branch 'main'
-Old Code is in branch 'old'
+Old Code is in branch 'old' or in /web (did since 2021) 
 ===============================
 
 ปรับอะไรบ้าง:
+
 Frontend
+
 1.Bootstrap => Tailwind & Material ui
+
 2.ปรับให้ compatible ทั้ง pc และ mobile (responsive)
+
 3.จัดเรียง React folder structure ให้ดีขึ้น
+
 4.Refactor code: feature การ fetch api และ setKeyword ให้ดูดีขี้น
+
 5.รับ router จาก router query ex./?keyword=ภูเขา
 
+6.ใช้ useContextAPI จัดการ props (branch beforeUseContextApi => main)
+
 Backend
+
 1.ปรับลดการใช้ built-in function ที่ Code ตัวเก่าที่ค่อนข้างจะยุ่งยากในการอ่าน
 
 
