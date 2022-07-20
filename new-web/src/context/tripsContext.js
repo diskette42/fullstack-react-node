@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, {
   createContext,
   useCallback,
@@ -7,6 +6,7 @@ import React, {
   useState,
 } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { api } from '../api'
 import useQuery from '../features/hooks/useQuery'
 
 const TripsContext = createContext(null)
@@ -28,12 +28,10 @@ export const TripsContextProvider = ({ children }) => {
   const getTrip = useCallback(async () => {
     try {
       if (!keyword) {
-        const res = await axios.get('http://localhost:9000/api/trips')
+        const res = await api.get('/trips')
         return setTrips(res.data)
       }
-      const res = await axios.get(
-        `http://localhost:9000/api/trips?keyword=${keyword}`,
-      )
+      const res = await api.get(`/trips?keyword=${keyword}`)
       return setTrips(res.data)
     } catch (e) {
       console.log(e)
