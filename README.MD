@@ -1,6 +1,8 @@
 # กลับมาทำใหม่ 20/07/2022
 Refactor code ใหม่ทั้งหมด ทั้ง front-end(/new-web) และ backend (/api-gateway)
 
+LET'S SEE:https://wongnai-trips-react.vercel.app/
+
 ## new code
 โค้ดใหม่ ปี 2022 ดูได้ที่ folder /new-web หรือ https://github.com/diskette42/wongnai-trips-react & https://github.com/diskette42/fullstack-react-node/tree/main/api-gateway
 
@@ -37,10 +39,9 @@ Backend
 
 ## Deployment:
 
+web-app:https://wongnai-trips-react.vercel.app/
+
 Front-end = Vercel (https://github.com/diskette42/wongnai-trips-react) 
-
-https://wongnai-trips-react.vercel.app/
-
 
 Back-end = Heroku (https://trips-node.herokuapp.com/api/trips) || (https://trips-node.herokuapp.com/api/trips?keyword=ภูเขา)
 
