@@ -4,7 +4,7 @@ Refactor code ใหม่ทั้งหมด ทั้ง front-end(/new-web)
 LET'S SEE:https://wongnai-trips-react.vercel.app/
 
 ## new code
-โค้ดใหม่ ปี 2022 ดูได้ที่ folder /new-web หรือ https://github.com/diskette42/wongnai-trips-react & https://github.com/diskette42/fullstack-react-node/tree/main/api-gateway
+โค้ดใหม่ ปี 2022 ดูได้ที่ folder /new-web https://github.com/diskette42/fullstack-react-node/tree/main/new-web หรือ https://github.com/diskette42/wongnai-trips-react & https://github.com/diskette42/fullstack-react-node/tree/main/api-gateway
 
 
 ## old code
