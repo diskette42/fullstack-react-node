@@ -2,8 +2,15 @@ import React from 'react'
 import { useTripsCTX } from '../../context/tripsContext'
 import { motion } from 'framer-motion'
 function TripsList() {
-  const { trips, keyword, setKeyword } = useTripsCTX()
+  const { trips, keyword, setKeyword, isLoading } = useTripsCTX()
 
+  if (isLoading) {
+    return (
+      <div className="flex justify-center mt-4 text-xl font-bold text-slate-400">
+        Loading...
+      </div>
+    )
+  }
   if (trips.length === 0) {
     return (
       <div className="flex justify-center mt-4 text-xl font-bold text-slate-400">

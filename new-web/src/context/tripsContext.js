@@ -15,6 +15,7 @@ export const TripsContextProvider = ({ children }) => {
   const query = useQuery()
   const queryKeyword = query.get('keyword')
   const navigate = useNavigate()
+  const [isLoading, setIsLoading] = useState(false)
   const [trips, setTrips] = useState([])
   const [keyword, setKeyword] = useState(queryKeyword ? queryKeyword : '')
   // Remove !!Eslint Warning!! when using useEffect with useCallback
@@ -26,6 +27,7 @@ export const TripsContextProvider = ({ children }) => {
   }, [keyword, navigate])
 
   const getTrip = useCallback(async () => {
+    setIsLoading(true)
     try {
       if (!keyword) {
         const res = await api.get('/trips')
@@ -35,6 +37,8 @@ export const TripsContextProvider = ({ children }) => {
       return setTrips(res.data)
     } catch (e) {
       console.log(e)
+    } finally {
+      setIsLoading(false)
     }
   }, [keyword])
 
@@ -48,6 +52,8 @@ export const TripsContextProvider = ({ children }) => {
     setTrips,
     keyword,
     setKeyword,
+    isLoading,
+    setIsLoading,
   }
 
   return <TripsContext.Provider value={value}>{children}</TripsContext.Provider>
